@@ -4,6 +4,14 @@ html, body {
     width: 100%;
 }
 
+header, footer{
+    background-color: rosybrown;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
 .logo {
     width: 60px;
     height: 60px;
@@ -12,6 +20,12 @@ html, body {
 #list-view img {
     width: 250px;
     height: 200px;
+}
+
+.hotel-div {
+    width: 40%;
+    margin: 2%;
+    background-color: rgb(132,136,139);
 }
 
 #socialmedia img {

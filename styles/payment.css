@@ -5,14 +5,39 @@ html, body {
 }
 
 
+
+header, footer{
+    background-color: rosybrown;
+}
+
 .logo {
     width: 60px;
     height: 60px;
 }
 
-.radisson {
+.radisson-div {
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+#radisson {
     width: 500px;
     height: 500px;
+}
+
+.customer-info {
+    margin: 2%;
+}
+
+.tariff {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2% 1% 2%;
 }
 
 #socialmedia img {
