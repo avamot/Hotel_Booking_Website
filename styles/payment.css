@@ -6,7 +6,17 @@ html, body {
 
 
 
-header, footer{
+footer{
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header{
     background-color: rosybrown;
     display: flex;
     justify-content: space-between;
@@ -35,7 +45,7 @@ header {
 }
 
 #contact-div {
-    margin-left: 10px;
+    margin-left: 2%;
     vertical-align: middle;
     align-content: center;  
 }
@@ -44,13 +54,27 @@ header {
     float:right;
     vertical-align: middle;
     align-content:center;
-    margin-right: 10px;
+    margin-right: 2%;
 }
 
+.content-div{
+  display: flex;  
+  flex-direction: column;
+  z-index: 500;
+  
+}
+.booking-info {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2% 1% 2%;
+    margin: 0 2% 0 2%;
+    background-color: rosybrown;
+}
 #copyright-div {
     vertical-align: text-bottom;
-    align-content:end;
-   
+    align-content:center; 
 }
 
 a { 
@@ -63,6 +87,7 @@ a {
 }
 
 .radisson-div {
+    display: flex;
     background-color: rgb(132,136,139);
     width: 50%;
     height: 20%;
@@ -70,24 +95,32 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
+    vertical-align: middle;
 }
 
-#radisson {
-    width: 500px;
-    height: 500px;
+
+.radisson img {
+    width: 300px;
+    height: 270px;
 }
 
-.customer-info {
-    margin: 2%;
+.hotel-desc {
+   align-self: center;
+   padding: 0 0 0 20px;
+   width: 100%;
+}
+.customer-info, .tariff, #pay {
+    align-self: center;
 }
 
-.tariff {
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1% 2% 1% 2%;
-}
+
 
 #socialmedia img {
     width: 22px;
     height: 20px;
 }
+
+h2, .booking-info p {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+

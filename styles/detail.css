@@ -36,7 +36,7 @@ header {
 }
 
 #contact-div {
-    margin-left: 10px;
+    margin-left: 2%;
     vertical-align: middle;
     align-content: center;  
 }
@@ -45,27 +45,35 @@ header {
     float:right;
     vertical-align: middle;
     align-content:center;
-    margin-right: 10px;
+    margin-right: 2%;
 }
 
 #copyright-div {
     vertical-align: text-bottom;
-    align-content:end;
+    align-content:center;
    
 }
 
 .radisson {
     margin: 2% 4% 0 4%;
     width: 500px;
-    height: 500px;
+    height: 350px;
 }
 
 .form-div {
-    margin: 0 4% 1% 4%;
+   width: 25%;
+   
 }
 
+.booking-div input:focus {
+    outline: auto black;
+ }
+
+h5 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
 .desc-div {
-    margin: 1% 4% 2% 4%;
+    margin: 1% 4% 2% 20px;
 }
 #socialmedia img {
     width: 22px;
@@ -76,3 +84,42 @@ a {
     color: black;
     text-decoration: none;
 }
+
+.booking-div {
+    display: flex;
+    margin: 20px;
+    height: 400px;
+    border: 1px black solid;
+    text-align: start;
+}
+
+.img-div {
+   width: 75%;
+   border-right: 1px solid black;
+   text-align: center;
+}
+
+
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+    margin: 15px;
+  }
+  .form-row > label {
+   
+    flex: 1;
+  }
+  .form-row > input {
+    flex: 2;
+    width: 60%;
+  }
+  .form-row > input,
+  .form-row > button {
+    padding: .5em;
+  }
+  .form-row > button {
+   border: 0;
+   align-content: flex-start;
+  }

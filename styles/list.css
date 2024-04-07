@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
+    min-height: 100vh;
 }
 
 header, footer{
@@ -16,6 +17,7 @@ header, footer{
 footer {
     bottom: 0;
     left: 0;
+    margin-top: 50px;
 }
 
 header {
@@ -51,21 +53,22 @@ body {
 }
 
 #contact-div {
-    margin-left: 10px;
+    margin-left: 2%;
     vertical-align: middle;
     align-content: center;  
 }
+
 
 #socialmedia{
     float:right;
     vertical-align: middle;
     align-content:center;
-    margin-right: 10px;
+    margin-right: 2%;
 }
 
 #copyright-div {
     vertical-align: text-bottom;
-    align-content:end;
+    align-content:center;
    
 }
 
@@ -80,17 +83,25 @@ body {
 }
 
 .hotel-div {
-    width: 85%;
+    width: 80%;
     margin: 2%;
-    background-color: rgb(132,136,139);
+    background-color: lightgrey;
+    display: flex;
+    text-align: top;
 }
-
 #desc {
    margin-top: 10px;
-    align-content: center;
+    align-content:flex-start
 }
 
 #socialmedia img {
     width: 22px;
     height: 20px;
+}
+
+.hotel-div #desc {
+    float: right;
+    margin-left: 10px;
+    text-align: left;
+    justify-content: center;
 }
