@@ -88,14 +88,14 @@ a {
    
 }
 
-.radisson {
+.booking-div .slideshow-container #myCarousel .carousel-inner .carousel-item img {
     margin: 2% 4% 0 4%;
     width: 500px;
     height: 350px;
 }
 
 .form-div {
-   width: 25%;
+   width: 40%;
    text-align: left;  
 }
 
@@ -131,8 +131,8 @@ a {
     text-align: start;
 }
 
-.img-div {
-   width: 75%;
+.slideshow-container {
+   width: 60%;
    border-right: 1px solid black;
    text-align: center;
 }
@@ -166,4 +166,25 @@ a {
    align-content: flex-start;
   }
 
-  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+  }
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: rosybrown;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rosybrown;
+}
