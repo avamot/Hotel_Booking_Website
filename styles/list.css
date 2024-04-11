@@ -24,32 +24,56 @@ header {
     top: 0;
     left: 0;
 }
-ul {
-    text-align: center;
-    top: 0;
-    left: 0;
-}
-li {
-    display: inline-block;
-   margin: 10px;
-    font-weight: bold;
+
+label {
+    margin: 10px;
 }
 
-a { 
-    color: black;
-    text-decoration: none;
+
+.modal-body {
+   align-content: center;
+   width: 100%;
 }
+
+.modal-header {
+    font-family: "Comic Sans MS";
+}
+
+
+ul {
+    display: inline-block;
+    justify-content: center;
+   margin: 10px;
+   font-family: "Comic Sans MS";
+}
+
+/* #map-view{
+    display: none;
+} */
+
+.nav-tabs .nav-link.active, .nav-item.active{
+    background-color: rgb(30,144,255);
+    color: black;
+    
+}
+
 
 body {
     background-color: #e0e0e0;
 }
 
-.logo, .login {
+.logo {
     width: 60px;
     height: 60px;
+    margin-left: 1%;
+}
+.login {
+     margin-right: 2%;
+}
+.logo, .login {
+   
     vertical-align: middle;
     align-content: center;
-   
 }
 
 #contact-div {
@@ -57,6 +81,11 @@ body {
     vertical-align: middle;
     align-content: center;  
 }
+
+.modal-backdrop {
+    position: relative;
+    z-index: -1
+ }
 
 
 #socialmedia{
@@ -104,4 +133,12 @@ body {
     margin-left: 10px;
     text-align: left;
     justify-content: center;
+}
+.hotel-div:hover {
+    background-color: rosybrown;
+}
+.btn-default:focus, .btn-default.active {
+    color: black;
+    background-color:blue;
+    text-decoration: none;
 }

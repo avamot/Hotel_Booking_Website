@@ -26,6 +26,28 @@ header{
     z-index: 10;
 }
 
+label {
+    margin: 10px;
+}
+.modal-body {
+    align-content: center;
+    width: 100%;
+ }
+ 
+ .modal-header {
+     font-family: "Comic Sans MS";
+ }
+ 
+ .form-horizontal {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     text-align: center;
+ }
+ .modal-backdrop {
+     position: relative;
+     z-index: -1
+  }
 footer {
     bottom: 0;
     left: 0;
@@ -36,12 +58,23 @@ header {
     left: 0;
 }
 
-.logo, .login {
+.logo {
     width: 60px;
     height: 60px;
+    margin-left: 1%;
+}
+.login {
+     margin-right: 2%;
+}
+.logo, .login {
+   
     vertical-align: middle;
     align-content: center;
-   
+}
+
+a { 
+    color: black;
+    text-decoration: none;
 }
 
 #contact-div {
@@ -77,10 +110,7 @@ header {
     align-content:center; 
 }
 
-a { 
-    color: black;
-    text-decoration: none;
-}
+
 #pay {
     
     margin-bottom: 30px;

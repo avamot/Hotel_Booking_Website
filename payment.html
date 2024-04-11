@@ -3,15 +3,56 @@
     <title>
         Payment
     </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/payment.css">
 </head>
 <div>
 <body>
     <header>
-        <a href="./index.html"><img src="./assests/images/logo.png" alt="logo" class="logo"></a>  
-            <a href="./login.html" target="_blank" class="login">Login</a>
-    </header>
+        <div>
+            <img src="./assests/images/logo.png" alt="logo" class="logo">  
+        </div> 
+        <div class="login">
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal">LOGIN</button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Please Login</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                    
+                            <form class="form-horizontal">
+                                <div class="form-group row">
+                                    <label for="uname" class="control-label col-sm-2">Username:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" id="uname" name="uname" placeholder="Enter Username" required autocomplete="off" class="form-control">
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group row">
+                                    <label for="password" class="control-label col-sm-2">Password:</label>
+                                    <div class="col-sm-6">
+                                        <input type="password" id="password" name="password" placeholder="Enter Password" autocomplete="off" class="form-control">
+                                    </div>             
+                                </div>                  
+                              </form>                     
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+        </div>        
+</header>
     <div class="content-div">
         <div class="hotel-info">
             <div class="radisson-div">
@@ -37,14 +78,41 @@
                     <p><b>Total Amount: </b>Rs.10000</p>
             </div>  
             <div id="pay">
-                <a href="#">Pay Now</a>
+                <button type="button" class="btn btn-success" disabled>Pay Now</button>
             </div> 
         </div>             
     </div>
     <footer>
         <div id="contact-div">
-            <a href="./contact.html" target="_blank">Contact Us</a>
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">Contact Us</button>
+            <div class="modal fade" id="myModal1" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Get in Touch</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <span>Thank you for reaching out!!!<br>
+                            Please enter your email and we will get back to you.</span>
+                    </div>
+                        <form class="form-group">
+                            <div class="d-inline-flex align-items-center">
+                                <label class="form-label" for="email">  Email:</label>
+                                <input type="text" id="email" class="form-control" placeholder="Enter your email id" required autocomplete="off"/>  
+                            </div>
+                        </form>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
         </div>
+        
         <div id="copyright-div">
             &#169; 2020 ROOM SEARCH PVT. LTD. 
         </div>
